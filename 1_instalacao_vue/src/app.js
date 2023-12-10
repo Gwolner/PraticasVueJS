@@ -2,15 +2,17 @@ const MeuNomeApp = {
 
     data(){
         return{
-            nome:"Guilherme",
-            idade: 31,
-            input_name: ""
+            nome:"",
+            idade: "",
+            input_nome: "",
+            input_idade: ""
         }
     },
     methods:{
         submitForm(e){
             e.preventDefault();
-            this.nome = this.input_name;
+            this.nome = this.input_nome;
+            this.idade = this.input_idade;
         }
     }
 }
