@@ -1,10 +1,18 @@
-const MyNameApp = {
+const MeuNomeApp = {
 
     data(){
         return{
-            name:"Guilherme"
+            nome:"Guilherme",
+            idade: 31,
+            input_name: ""
+        }
+    },
+    methods:{
+        submitForm(e){
+            e.preventDefault();
+            this.nome = this.input_name;
         }
     }
 }
 
-Vue.createApp(MyNameApp).mount("#app");
+Vue.createApp(MeuNomeApp).mount("#app");
