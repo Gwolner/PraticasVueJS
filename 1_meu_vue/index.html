@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="src/app.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        
+        <form id="app-form">
+            <input type="text" v-model="input_nome" placeholder="Digite o nome"/> {{ input_nome }}<br>
+            <input type="text" v-model="input_idade" placeholder="Digite a idade"/> {{ input_idade }}<br>
+            <input type="submit" value="Enviar" v-on:click="submeterForm">
+            <input type="reset" value="Limpar" v-on:click="limparForm">
+        </form>
+
+        <p><b>Nome:</b> {{ nome }} </p>
+        <p><b>Idade:</b> {{ idade }} </p>
+    </div>
+</body>
+</html>
