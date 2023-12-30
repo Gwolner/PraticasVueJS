@@ -1,8 +1,8 @@
 <script>
   import PrimeiroComponente from './components/PrimeiroComponente.vue';
-  
+
   export default{
-    name: 'app',
+    name: 'App',
     components:{
       PrimeiroComponente
     }
