@@ -1,9 +1,12 @@
-<template>
-    <h1>Olá Vue!</h1>
-</template>
-
 <script>
     export default{
-        name: 'PrimeiroComponente'
+        name: 'PrimeiroComponente',
+        props:{
+            mensagem: String
+        }
     }
 </script>
+
+<template>
+    <h1>{{ mensagem }}</h1>
+</template>

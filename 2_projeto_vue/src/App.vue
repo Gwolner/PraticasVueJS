@@ -1,9 +1,4 @@
-<template>
-  <!-- <h1>Olá Caralho!</h1> -->
-  <PrimeiroComponente />
-</template>
-
-<script>
+<!-- <script>
 
   import PrimeiroComponente from './components/PrimeiroComponente.vue';
 
@@ -15,11 +10,10 @@
   }
 </script>
 
+<template>
+  <PrimeiroComponente mensagem="Olá Vue!" />
+</template> -->
 
-<!-- <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
@@ -32,6 +26,13 @@ export default {
 }
 </script>
 
+<template>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
+</template>
+
+
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -41,4 +42,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-</style> -->
+</style>
